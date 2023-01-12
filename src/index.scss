@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+	overflow-y: hidden;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	padding-top: 20px;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+body {
+	background-color: var(--clr-p-300);
+}
+
+@media (min-width: 768px) {
+	body {
+		padding-top: 0;
+	}
+}

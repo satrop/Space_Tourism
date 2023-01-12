@@ -1,0 +1,137 @@
+:root {
+	// Fonts
+	--ff-300: "Barlow Condensed", sans-serif; // Headers
+	--ff-400: "Bellefair", serif; // Main
+
+	--fs-head-100: 5rem; // 80
+	--fs-head-200: 3.5rem; // 56
+	--fs-head-300: 1.5rem; // 24
+	--fs-head-400: 1rem; // 16
+	--fs-head-500: 1rem; // 16
+
+	--fs-sub-100: 1.75rem; // 28
+	--fs-sub-200: 0.875rem; // 14
+
+	--fs-body: 0.9375rem; // 15
+
+	--lh-head-100: 6.25rem; // 100
+	--lh-head-200: 4rem; // 64
+	--lh-head-300: 1.75rem; // 28
+	--lh-head-400: 1.125rem; // 18
+	--lh-head-500: 1.1875rem; // 19
+
+	--lh-sub-100: 2rem; // 32
+	--lh-sub-200: 1.0625rem; // 17
+
+	--lh-body: 1.5625rem; // 25
+}
+
+@media (min-width: 768px) {
+	:root {
+		// Fonts
+		--fs-head-100: 9.375rem; // 150
+		--fs-head-200: 5rem; // 80
+		--fs-head-300: 2.5rem; // 40
+		--fs-head-400: 1.5rem; // 24
+		--fs-head-500: 1.5rem; // 24
+
+		--fs-body: 1rem; // 16
+
+		--lh-head-100: 9.375rem; // 150
+		--lh-head-200: 5.75rem; // 92
+		--lh-head-300: 2.875rem; // 46
+		--lh-head-400: 1.5rem; // 24
+		--lh-head-500: 1.5rem; // 24
+
+		--lh-body: 1.75rem; // 28
+	}
+}
+
+@media (min-width: 1440px) {
+	:root {
+		// Fonts
+		--fs-head-200: 6.25rem; // 100
+		--fs-head-300: 3.5rem; // 56
+		--fs-head-400: 2.25rem; // 36
+		--fs-head-500: 1.75rem; // 28
+
+		--fs-body: 1.125rem; // 18
+
+		--lh-head-100: 10.9375rem; // 175
+		--lh-head-200: 7.1875rem; // 115
+		--lh-head-300: 4rem; // 64
+		--lh-head-400: 4.5625rem; // 73
+		--lh-head-500: 2.125rem; // 34
+
+		--lh-body: 2rem; // 32
+	}
+}
+
+body {
+	font-family: var(--ff-300);
+	font-size: var(--fs-body);
+	line-height: var(--lh-body);
+	color: var(--clr-p-100);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+	font-family: var(--ff-300);
+}
+
+h5,
+.h5 {
+	font-family: var(--ff-400);
+	letter-spacing: 4.725px;
+}
+
+h1,
+.h1 {
+	font-size: var(--fs-head-100);
+	line-height: var(--lh-head-100);
+}
+
+h2,
+.h2 {
+	font-size: var(--fs-head-200);
+	line-height: var(--lh-head-200);
+}
+
+h3,
+.h3 {
+	font-size: var(--fs-head-300);
+	line-height: var(--lh-head-300);
+}
+
+h4,
+.h4 {
+	font-size: var(--fs-head-400);
+	line-height: var(--lh-head-400);
+}
+
+h5,
+.h5 {
+	font-size: var(--fs-head-500);
+	line-height: var(--lh-head-500);
+}
+
+.sub-head {
+	font-family: var(--ff-400);
+
+	&-1 {
+		font-size: var(--fs-sub-100);
+		line-height: var(--lh-sub-100);
+	}
+
+	&-2 {
+		font-size: var(--fs-sub-200);
+		line-height: var(--lh-sub-200);
+		letter-spacing: 2.35px;
+	}
+}

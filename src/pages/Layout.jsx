@@ -1,18 +1,72 @@
 import { Outlet, NavLink } from "react-router-dom";
+import { useState } from "react";
+import logo from "../../public/shared/logo.svg";
+import hamburger from "../../public/shared/icon-hamburger.svg";
+import close from "../../public/shared/icon-close.svg";
+
+import "./Layout.scss";
 
 const Layout = () => {
+	const [active, setActive] = useState(false);
+	let [isPressed, setIsPressed] = useState(false);
+
+	const handleClick = () => {
+		setActive((prevActive) => !prevActive);
+		setIsPressed(!isPressed);
+	};
+
+	const closeMenu = () => {
+		setActive((prevActive) => !prevActive);
+	};
+
 	return (
 		<>
-			<nav>
-				<ul>
+			<nav className="main-nav">
+				<NavLink to="/">
+					<img
+						src={logo}
+						alt="Space Tourism Logo"
+						aria-label="Link back to home page"
+						className="main-icon"
+					/>
+				</NavLink>
+				<button
+					onClick={handleClick}
+					aria-pressed={isPressed}
+					className={`menu-toggle ${active ? "active" : ""}`}>
+					<img
+						src={hamburger}
+						alt=""
+						aria-hidden="true"
+						className="icon hamburger"
+					/>
+					<img
+						src={close}
+						alt=""
+						aria-hidden="true"
+						className="icon close"
+					/>
+				</button>
+				<ul className={active ? "active" : ""}>
 					<li>
-						<NavLink to="/">Home</NavLink>
+						<NavLink to="/" onClick={closeMenu}>
+							<span aria-hidden="true">00</span>Home
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/blogs">Blogs</NavLink>
+						<NavLink to="/destination" onClick={closeMenu}>
+							<span aria-hidden="true">01</span>Destination
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/contact">Contact</NavLink>
+						<NavLink to="/crew" onClick={closeMenu}>
+							<span aria-hidden="true">02</span>Crew
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/technology" onClick={closeMenu}>
+							<span aria-hidden="true">03</span>Technology
+						</NavLink>
 					</li>
 				</ul>
 			</nav>
