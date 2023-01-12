@@ -1,8 +1,8 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { useState } from "react";
-import logo from "../../public/shared/logo.svg";
-import hamburger from "../../public/shared/icon-hamburger.svg";
-import close from "../../public/shared/icon-close.svg";
+import logo from "../assets/shared/logo.svg";
+import hamburger from "../assets/shared/icon-hamburger.svg";
+import close from "../assets/shared/icon-close.svg";
 
 import "./Layout.scss";
 
