@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import "./crew.scss";
+import "./Crew.scss";
 
 const Crew = () => {
 	useEffect(() => {
