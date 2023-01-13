@@ -41,11 +41,10 @@
 			}
 		}
 	}
-
+color: #0c0e18;
 	ul {
 		position: fixed;
-		background-color: rgba(#fff, 0.05);
-		backdrop-filter: blur(30px);
+		background-color: rgba(#0c0e18, 0.95);
 		top: 0;
 		right: -100%;
 		height: 100%;
@@ -82,6 +81,15 @@
 					box-shadow: inset -4px 0 0 var(--clr-p-100);
 				}
 			}
+		}
+	}
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+	.main-nav {
+		ul {
+			background-color: rgba(#fff, 0.1);
+			backdrop-filter: blur(2rem);
 		}
 	}
 }
@@ -174,7 +182,7 @@
 	.main-nav {
 		margin-top: 2.5rem;
 		position: relative;
-		
+
 		.main-icon-wrapper,
 		ul {
 			flex-shrink: 0;
@@ -195,7 +203,6 @@
 			padding-left: 7.6875rem;
 			padding-right: 10.3125rem;
 			width: clamp(40rem, 80vw, 55rem);
-			
 
 			li {
 				a {
