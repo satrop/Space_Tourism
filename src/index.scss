@@ -44,8 +44,23 @@ body {
 	background-color: var(--clr-p-300);
 }
 
+.container {
+	width: min(80%, 327px);
+	margin-inline: auto;
+}
+
 @media (min-width: 768px) {
 	body {
 		padding-top: 0;
+	}
+
+	.container {
+		width: min(80%, 683px);
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		width: min(80%, 1218px);
 	}
 }

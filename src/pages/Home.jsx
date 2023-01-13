@@ -10,11 +10,7 @@ const Home = () => {
 		};
 	}, []);
 
-	return (
-		<div className="page home">
-			<div className="test">home</div>
-		</div>
-	);
+	return <section className="container"></section>;
 };
 
 export default Home;

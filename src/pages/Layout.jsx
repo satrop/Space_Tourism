@@ -22,7 +22,7 @@ const Layout = () => {
 	return (
 		<>
 			<nav className="main-nav">
-				<NavLink to="/">
+				<NavLink to="/" className="main-icon-wrapper">
 					<img
 						src={logo}
 						alt="Space Tourism Logo"
@@ -30,6 +30,7 @@ const Layout = () => {
 						className="main-icon"
 					/>
 				</NavLink>
+				<div className="line"></div>
 				<button
 					onClick={handleClick}
 					aria-pressed={isPressed}
