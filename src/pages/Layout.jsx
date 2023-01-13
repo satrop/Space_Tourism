@@ -49,22 +49,26 @@ const Layout = () => {
 				</button>
 				<ul className={active ? "active" : ""}>
 					<li>
-						<NavLink to="/" onClick={closeMenu}>
+						<NavLink to="/space_tourism/" onClick={closeMenu}>
 							<span aria-hidden="true">00</span>Home
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/destination" onClick={closeMenu}>
+						<NavLink
+							to="/space_tourism/destination"
+							onClick={closeMenu}>
 							<span aria-hidden="true">01</span>Destination
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/crew" onClick={closeMenu}>
+						<NavLink to="/space_tourism/crew" onClick={closeMenu}>
 							<span aria-hidden="true">02</span>Crew
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/technology" onClick={closeMenu}>
+						<NavLink
+							to="/space_tourism/technology"
+							onClick={closeMenu}>
 							<span aria-hidden="true">03</span>Technology
 						</NavLink>
 					</li>
