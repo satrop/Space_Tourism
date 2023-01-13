@@ -1,7 +1,7 @@
 :root {
 	// Fonts
-	--ff-300: "Barlow Condensed", sans-serif; // Headers
-	--ff-400: "Bellefair", serif; // Main
+	--ff-300: "Barlow Condensed", sans-serif; // Main
+	--ff-400: "Bellefair", serif; // Headers
 
 	--fs-head-100: 5rem; // 80
 	--fs-head-200: 3.5rem; // 56
@@ -23,7 +23,7 @@
 	--lh-sub-100: 2rem; // 32
 	--lh-sub-200: 1.0625rem; // 17
 
-	--lh-body: 1.5625rem; // 25
+	--lh-body: 1.75rem; // 25
 }
 
 @media (min-width: 768px) {
@@ -71,7 +71,8 @@ body {
 	font-family: var(--ff-300);
 	font-size: var(--fs-body);
 	line-height: var(--lh-body);
-	color: var(--clr-p-100);
+	color: var(--clr-p-200);
+	font-weight: 400;
 }
 
 h1,
@@ -82,12 +83,14 @@ h3,
 .h3,
 h4,
 .h4 {
-	font-family: var(--ff-300);
+	font-family: var(--ff-400);
+	font-weight: 400;
+	color: var(--clr-p-100);
 }
 
 h5,
 .h5 {
-	font-family: var(--ff-400);
+	font-family: var(--ff-300);
 	letter-spacing: 4.725px;
 }
 
@@ -95,6 +98,7 @@ h1,
 .h1 {
 	font-size: var(--fs-head-100);
 	line-height: var(--lh-head-100);
+	text-transform: uppercase;
 }
 
 h2,
@@ -119,6 +123,7 @@ h5,
 .h5 {
 	font-size: var(--fs-head-500);
 	line-height: var(--lh-head-500);
+	color: var(--clr-p-200);
 }
 
 .sub-head {
