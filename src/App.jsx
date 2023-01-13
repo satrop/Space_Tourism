@@ -10,17 +10,11 @@ export default function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/space_tourism/" element={<Layout />}>
+				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
-					<Route
-						path="/space_tourism/destination"
-						element={<Destination />}
-					/>
-					<Route path="/space_tourism/crew" element={<Crew />} />
-					<Route
-						path="/space_tourism/technology"
-						element={<Technology />}
-					/>
+					<Route path="/destination" element={<Destination />} />
+					<Route path="/crew" element={<Crew />} />
+					<Route path="/technology" element={<Technology />} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
