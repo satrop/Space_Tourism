@@ -41,7 +41,7 @@
 			}
 		}
 	}
-color: #0c0e18;
+
 	ul {
 		position: fixed;
 		background-color: rgba(#0c0e18, 0.95);
@@ -138,6 +138,7 @@ color: #0c0e18;
 						bottom: -33px;
 						transform: scale(0);
 						animation: bar-out forwards 0.3s ease-in-out;
+						opacity: 0.5;
 					}
 
 					&:hover {
@@ -170,6 +171,7 @@ color: #0c0e18;
 						&::after {
 							width: 100%;
 							animation: bar-in forwards 0.3s ease-in-out;
+							opacity: 1;
 						}
 					}
 				}
