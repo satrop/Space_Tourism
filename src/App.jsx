@@ -21,7 +21,6 @@ export default function App() {
 						path="/Space_Tourism/technology"
 						element={<Technology />}
 					/>
-					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
