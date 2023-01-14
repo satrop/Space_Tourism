@@ -1,5 +1,5 @@
 body.destination {
-	background: url("./destination/background-destination-mobile.jpg");
+	background: url("/destination/background-destination-mobile.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -72,7 +72,7 @@ body.destination {
 
 @media (min-width: 768px) {
 	body.destination {
-		background: url("./destination/background-destination-tablet.jpg");
+		background: url("/destination/background-destination-tablet.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -81,7 +81,7 @@ body.destination {
 
 @media (min-width: 1440px) {
 	body.destination {
-		background: url("./destination/background-destination-desktop.jpg");
+		background: url("/destination/background-destination-desktop.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
