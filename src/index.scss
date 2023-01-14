@@ -63,3 +63,7 @@ body {
 		width: min(80%, 1218px);
 	}
 }
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+}

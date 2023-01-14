@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./Home.scss";
 
@@ -24,9 +25,9 @@ const Home = () => {
 					</p>
 				</div>
 				<div className="explore-wrapper">
-					<a href="#nogo" className="explore">
+					<Link to="/Space_Tourism/destination" className="explore">
 						Explore
-					</a>
+					</Link>
 				</div>
 			</div>
 		</section>

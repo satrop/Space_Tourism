@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Swiper from "../Components/Swiper/Swiper";
+import Swiper from "../Components/Swiper/DestinationSwiper";
 
 import "./Destination.scss";
 import "swiper/css/scrollbar";

@@ -1,17 +1,19 @@
 // import Swiper core and required modules
-import { Pagination, A11y, Parallax } from "swiper";
+import { Pagination, A11y, Parallax, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import dataSet from "../../assets/data.json";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 export default () => {
 	let labels = ["Moon", "Mars", "Europa", "Titan"];
 	const pagination = {
 		clickable: true,
+		el: ".page-pagination",
 		renderBullet: function (index, className) {
 			return '<div class="' + className + '">' + labels[index] + "</div>";
 		},
@@ -20,7 +22,7 @@ export default () => {
 	const swiperList = dataSet.destinations.map((item, i) => {
 		return (
 			<SwiperSlide key={i}>
-				<div className="slide-content">
+				<div className="slide-content flow">
 					<div className="image" data-swiper-parallax-opacity="0">
 						<img
 							src={item.images.png}
@@ -28,31 +30,36 @@ export default () => {
 						/>
 					</div>
 					<div
-						className="header"
-						data-swiper-parallax="-100"
-						data-swiper-parallax-duration="1600">
-						{item.name}
+						className="page-pagination"
+						data-swiper-parallax-opacity="0"></div>
+					<div
+						className="main-block"
+						data-swiper-parallax-opacity="0">
+						<div
+							className="main-block__header"
+							data-swiper-parallax="-50">
+							{item.name}
+						</div>
+						<p className="main-block__description">
+							{item.description}
+						</p>
 					</div>
-					<p
-						className="description"
-						data-swiper-parallax="-100"
-						data-swiper-parallax-duration="1200">
-						{item.description}
-					</p>
-					<div className="info-content">
-						<div className="info-block">
-							<div className="info-block__header">
+					<div
+						className="stat-content flow"
+						data-swiper-parallax-opacity="0">
+						<div className="stat-block">
+							<div className="stat-block__header">
 								Avg. Distance
 							</div>
-							<div className="info-block__stat">
+							<div className="stat-block__stat">
 								{item.distance}
 							</div>
 						</div>
-						<div className="info-block">
-							<div className="info-block__header">
+						<div className="stat-block">
+							<div className="stat-block__header">
 								Est. Time Travel
 							</div>
-							<div className="info-block__stat">
+							<div className="stat-block__stat">
 								{item.travel}
 							</div>
 						</div>
@@ -64,11 +71,13 @@ export default () => {
 
 	return (
 		<Swiper
-			modules={[Pagination, A11y, Parallax]}
+			modules={[Pagination, A11y, Parallax, EffectFade]}
+			effect={"fade"}
 			pagination={pagination}
 			spaceBetween={50}
 			slidesPerView={1}
 			parallax={true}
+			autoHeight={true}
 			speed={1600}>
 			{swiperList}
 		</Swiper>
