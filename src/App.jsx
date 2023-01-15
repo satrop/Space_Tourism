@@ -10,7 +10,7 @@ export default function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/Space_Tourism/" element={<Layout />}>
+				<Route path="/Space_Tourism/" exact element={<Layout />}>
 					<Route index element={<Home />} />
 					<Route
 						path="/Space_Tourism/destination"
