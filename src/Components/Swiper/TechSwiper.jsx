@@ -23,18 +23,12 @@ export default () => {
 					<div
 						className="image image--mobile"
 						data-swiper-parallax-opacity="0">
-						<img
-							src={item.images.landscape}
-							alt={`Image of ${item.name}`}
-						/>
+						<img src={item.images.landscape} alt={item.name} />
 					</div>
 					<div
 						className="image image--desktop"
 						data-swiper-parallax-opacity="0">
-						<img
-							src={item.images.portrait}
-							alt={`Image of ${item.name}`}
-						/>
+						<img src={item.images.portrait} alt={item.name} />
 					</div>
 					<div
 						className="page-pagination"

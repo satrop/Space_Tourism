@@ -13,9 +13,9 @@ const Destination = () => {
 
 	return (
 		<section className="container">
-			<div className="page-Header">
+			<h1 className="page-Header">
 				<span>01</span> Pick Your Destination
-			</div>
+			</h1>
 			<Swiper />
 		</section>
 	);

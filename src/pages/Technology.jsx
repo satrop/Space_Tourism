@@ -14,9 +14,9 @@ const Technology = () => {
 	return (
 		<>
 			<section className="container">
-				<div className="page-Header">
+				<h1 className="page-Header">
 					<span>03</span> Space Launch 101
-				</div>
+				</h1>
 			</section>
 			<div className="alt-container">
 				<Swiper />

@@ -13,9 +13,9 @@ const Crew = () => {
 
 	return (
 		<section className="container">
-			<div className="page-Header">
+			<h1 className="page-Header">
 				<span>02</span> Meet Your Crew
-			</div>
+			</h1>
 			<Swiper />
 		</section>
 	);

@@ -17,28 +17,21 @@ export default () => {
 			<SwiperSlide key={i}>
 				<div className="slide-content flow">
 					<div className="image" data-swiper-parallax-opacity="0">
-						<img
-							src={item.images.png}
-							alt={`Image of ${item.name}`}
-                        />
+						<img src={item.images.png} alt={item.name} />
 					</div>
 					<div
 						className="page-pagination"
 						data-swiper-parallax-opacity="0"></div>
 					<div
 						className="main-block"
-                        data-swiper-parallax-opacity="0">
-                        <div className="main-block__eyebrow">
-                            {item.role}
-                        </div>
+						data-swiper-parallax-opacity="0">
+						<div className="main-block__eyebrow">{item.role}</div>
 						<div
 							className="main-block__header"
 							data-swiper-parallax="-50">
 							{item.name}
 						</div>
-						<p className="main-block__bio">
-							{item.bio}
-						</p>
+						<p className="main-block__bio">{item.bio}</p>
 					</div>
 				</div>
 			</SwiperSlide>

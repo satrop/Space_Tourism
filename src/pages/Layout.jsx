@@ -22,16 +22,19 @@ const Layout = () => {
 	return (
 		<>
 			<nav className="main-nav">
-				<NavLink to="/" className="main-icon-wrapper">
+				<NavLink
+					to="/"
+					className="main-icon-wrapper"
+					aria-label="Link back to home page">
 					<img
 						src={logo}
 						alt="Space Tourism Logo"
-						aria-label="Link back to home page"
 						className="main-icon"
 					/>
 				</NavLink>
 				<div className="line"></div>
 				<button
+					aria-label="Mobile menu toggle"
 					onClick={handleClick}
 					aria-pressed={isPressed}
 					className={`menu-toggle ${active ? "active" : ""}`}>

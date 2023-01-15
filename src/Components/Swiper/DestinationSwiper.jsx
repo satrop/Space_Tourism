@@ -21,10 +21,7 @@ export default () => {
 			<SwiperSlide key={i}>
 				<div className="slide-content flow">
 					<div className="image" data-swiper-parallax-opacity="0">
-						<img
-							src={item.images.png}
-							alt={`Image of ${item.name}`}
-						/>
+						<img src={item.images.png} alt={item.name} />
 					</div>
 					<div
 						className="page-pagination"
