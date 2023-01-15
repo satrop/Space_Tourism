@@ -1,14 +1,14 @@
-#[Frontend Mentor - Space Tourism](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
+# [Frontend Mentor - Space Tourism](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
 
-##Overview
+## Overview
 
 -   [Live Site](https://satrop.github.io/Space_Tourism/)
 
 ![](./LG.png)
 
-##My process
+## My process
 
-###Built with ❤️
+### Built with ❤️
 
 -   Semantic HTML5 markup
 -   SCSS with custom properties
@@ -17,7 +17,7 @@
 -   Mobile-first workflow
 -   React
 
-###What I learned
+### What I learned
 
 I'm hoping I have now nailed down the page refresh issues that gh-pages has with multi page React apps thanks to `<HashRouter>`
 
