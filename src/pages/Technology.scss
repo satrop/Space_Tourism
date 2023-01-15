@@ -1,8 +1,8 @@
 body.technology {
-	background: url("/technology/background-technology-mobile.jpg");
+	background: url("/technology/background-technology-mobile.jpg") no-repeat
+		center;
 	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 	.swiper {
 		.slide-content {
@@ -85,10 +85,10 @@ body.technology {
 
 @media (min-width: 768px) {
 	body.technology {
-		background: url("/technology/background-technology-tablet.jpg");
+		background: url("/technology/background-technology-tablet.jpg")
+			no-repeat center;
 		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		background-attachment: fixed;
 
 		.swiper {
 			.slide-content {
@@ -129,10 +129,10 @@ body.technology {
 
 @media (min-width: 1440px) {
 	body.technology {
-		background: url("/technology/background-technology-desktop.jpg");
+		background: url("/technology/background-technology-desktop.jpg")
+			no-repeat center;
 		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		background-attachment: fixed;
 
 		.alt-container {
 			width: min(80%, 1218px);

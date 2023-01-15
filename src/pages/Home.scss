@@ -1,6 +1,7 @@
 body.home {
 	background: url("/home/background-home-mobile.jpg") no-repeat center;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .home-content {
@@ -36,6 +37,7 @@ body.home {
 	body.home {
 		background: url("/home/background-home-tablet.jpg") no-repeat center;
 		background-size: cover;
+		background-attachment: fixed;
 
 		.container {
 			width: min(80%, 450px);
@@ -62,6 +64,7 @@ body.home {
 	body.home {
 		background: url("/home/background-home-desktop.jpg") no-repeat center;
 		background-size: cover;
+		background-attachment: fixed;
 
 		.container {
 			width: min(80%, 1110px);

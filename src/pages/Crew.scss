@@ -1,8 +1,7 @@
 body.crew {
-	background: url("/crew/background-crew-mobile.jpg");
+	background: url("/crew/background-crew-mobile.jpg") no-repeat center;
 	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 	.swiper {
 		.slide-content {
@@ -85,10 +84,9 @@ body.crew {
 
 @media (min-width: 768px) {
 	body.crew {
-		background: url("/crew/background-crew-tablet.jpg");
+		background: url("/crew/background-crew-tablet.jpg") no-repeat center;
 		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		background-attachment: fixed;
 
 		.swiper {
 			.slide-content {
@@ -134,10 +132,9 @@ body.crew {
 
 @media (min-width: 1440px) {
 	body.crew {
-		background: url("/crew/background-crew-desktop.jpg");
+		background: url("/crew/background-crew-desktop.jpg") no-repeat center;
 		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		background-attachment: fixed;
 
 		.swiper {
 			.slide-content {
