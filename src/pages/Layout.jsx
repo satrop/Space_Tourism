@@ -22,7 +22,7 @@ const Layout = () => {
 	return (
 		<>
 			<nav className="main-nav">
-				<NavLink to="/Space_Tourism/" className="main-icon-wrapper">
+				<NavLink to="/" className="main-icon-wrapper">
 					<img
 						src={logo}
 						alt="Space Tourism Logo"
@@ -50,26 +50,22 @@ const Layout = () => {
 				</button>
 				<ul className={active ? "active" : ""}>
 					<li>
-						<NavLink to="/Space_Tourism/" onClick={closeMenu}>
+						<NavLink to="/" onClick={closeMenu}>
 							<span aria-hidden="true">00</span>Home
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							to="/Space_Tourism/destination"
-							onClick={closeMenu}>
+						<NavLink to="/destination" onClick={closeMenu}>
 							<span aria-hidden="true">01</span>Destination
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/Space_Tourism/crew" onClick={closeMenu}>
+						<NavLink to="/crew" onClick={closeMenu}>
 							<span aria-hidden="true">02</span>Crew
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							to="/Space_Tourism/technology"
-							onClick={closeMenu}>
+						<NavLink to="/technology" onClick={closeMenu}>
 							<span aria-hidden="true">03</span>Technology
 						</NavLink>
 					</li>
