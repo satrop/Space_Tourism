@@ -1,5 +1,5 @@
 body.crew {
-	background: url("crew/background-crew-mobile.jpg");
+	background: url("/crew/background-crew-mobile.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -85,7 +85,7 @@ body.crew {
 
 @media (min-width: 768px) {
 	body.crew {
-		background: url("crew/background-crew-tablet.jpg");
+		background: url("/crew/background-crew-tablet.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -134,7 +134,7 @@ body.crew {
 
 @media (min-width: 1440px) {
 	body.crew {
-		background: url("crew/background-crew-desktop.jpg");
+		background: url("/crew/background-crew-desktop.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -163,10 +163,10 @@ body.crew {
 					margin-top: -320px;
 
 					.swiper-pagination-bullet {
-						transition: opacity .3s	ease-in-out;
+						transition: opacity 0.3s ease-in-out;
 
 						&:hover {
-							opacity: .5;
+							opacity: 0.5;
 						}
 					}
 				}
