@@ -1,6 +1,7 @@
 import { useEffect } from "react";
+import Swiper from "../Components/Swiper/TechSwiper";
 
-import "./Technology.scss"
+import "./Technology.scss";
 
 const Technology = () => {
 	useEffect(() => {
@@ -11,9 +12,16 @@ const Technology = () => {
 	}, []);
 
 	return (
-		<div className="page technology">
-			<div className="test">technology</div>
-		</div>
+		<>
+			<section className="container">
+				<div className="page-Header">
+					<span>03</span> Space Launch 101
+				</div>
+			</section>
+			<div className="alt-container">
+				<Swiper />
+			</div>
+		</>
 	);
 };
 

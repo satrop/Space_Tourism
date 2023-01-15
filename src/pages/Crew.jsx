@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Swiper from "../Components/Swiper/CrewSwiper";
 
 import "./Crew.scss";
 
@@ -11,9 +12,12 @@ const Crew = () => {
 	}, []);
 
 	return (
-		<div className="page crew">
-			<div className="test">crew</div>
-		</div>
+		<section className="container">
+			<div className="page-Header">
+				<span>02</span> Meet Your Crew
+			</div>
+			<Swiper />
+		</section>
 	);
 };
 

@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Swiper from "../Components/Swiper/DestinationSwiper";
 
 import "./Destination.scss";
-import "swiper/css/scrollbar";
 
 const Destination = () => {
 	useEffect(() => {
@@ -15,7 +14,7 @@ const Destination = () => {
 	return (
 		<section className="container">
 			<div className="page-Header">
-				<span>01</span> Destination
+				<span>01</span> Pick Your Destination
 			</div>
 			<Swiper />
 		</section>

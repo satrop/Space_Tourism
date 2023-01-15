@@ -7,16 +7,12 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 export default () => {
-	let labels = ["Moon", "Mars", "Europa", "Titan"];
 	const pagination = {
 		clickable: true,
 		el: ".page-pagination",
-		renderBullet: function (index, className) {
-			return '<div class="' + className + '">' + labels[index] + "</div>";
-		},
 	};
 
-	const swiperList = dataSet.destinations.map((item, i) => {
+	const swiperList = dataSet.crew.map((item, i) => {
 		return (
 			<SwiperSlide key={i}>
 				<div className="slide-content flow">
@@ -24,42 +20,25 @@ export default () => {
 						<img
 							src={item.images.png}
 							alt={`Image of ${item.name}`}
-						/>
+                        />
 					</div>
 					<div
 						className="page-pagination"
 						data-swiper-parallax-opacity="0"></div>
 					<div
 						className="main-block"
-						data-swiper-parallax-opacity="0">
+                        data-swiper-parallax-opacity="0">
+                        <div className="main-block__eyebrow">
+                            {item.role}
+                        </div>
 						<div
 							className="main-block__header"
 							data-swiper-parallax="-50">
 							{item.name}
 						</div>
-						<p className="main-block__description">
-							{item.description}
+						<p className="main-block__bio">
+							{item.bio}
 						</p>
-					</div>
-					<div
-						className="stat-content flow"
-						data-swiper-parallax-opacity="0">
-						<div className="stat-block">
-							<div className="stat-block__header">
-								Avg. Distance
-							</div>
-							<div className="stat-block__stat">
-								{item.distance}
-							</div>
-						</div>
-						<div className="stat-block">
-							<div className="stat-block__header">
-								Est. Time Travel
-							</div>
-							<div className="stat-block__stat">
-								{item.travel}
-							</div>
-						</div>
 					</div>
 				</div>
 			</SwiperSlide>
